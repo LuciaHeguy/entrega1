@@ -233,7 +233,11 @@ margin-left: 10px;
   background-color: white;
   color:#f35507
 }
-
+@media only screen and (min-device-width:320px)and (max-device-width:568px){
+  .form-login{
+    width: 300px;
+  }
+}
  @media (min-width:1366px){
   .titulo{
     font-size: 50px;
@@ -251,6 +255,7 @@ and (orientation : portrait) {
     width: 600px;
     margin-top: 300px;
   }
+  
   .buttons {
     width: 93%;
     }
