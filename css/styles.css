@@ -243,7 +243,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 14px;
-
+}
 
 
 .jumbotron,
@@ -461,8 +461,10 @@ h2{
 .listaCategorias h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  padding-top: 3px;
+  padding-left: 15px;
   color: orangered;
-  text-align: center;
+  text-align: left;
   font-weight: 100
 }
 
@@ -559,5 +561,86 @@ h2{
   padding-right: 70px;
   display: flex;
   align-items: center;
+
+}
+
+.menuHamburguesa{
+
+position: absolute;
+padding-left: 5px;
+  
+}
+.ulCategorias {
+  height:0;
+  overflow: hidden;
+}
+
+#menuHamburguesaCategorías:checked ~ .product-list .ulCategorias {
+  height: auto;
+
+}
+
+
+
+
+@media (max-width: 568px) {  
+
+  .product {
+    display: block;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    
+  }
+
+  .product-image {
+
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .product-description {
+
+    text-align: center;
+  }
+
+
+  .product-price {
+
+    margin-left: 110%;
+  }
+
+  .product-sold-count {
+
+    margin-left: 110%;
+  }
+
+  .categoria {
+    padding-left: 50px;
+    text-align: center;
+
+  }
+  
+  .listaCategorias {
+
+  }
+  .listaCategorias h3{
+    display: none;
+  }  
+
+  #menuHamburguesaCategorías:checked ~ .product-list .listaCategorias h3 {
+    display: block;
+  }
+
+}
+
+@media (min-width: 768px) {            /* Resposividad */
+
+}
+
+@media (min-width: 1024px) {
 
 }
