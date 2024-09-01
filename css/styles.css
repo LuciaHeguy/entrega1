@@ -589,11 +589,7 @@ and (orientation : portrait){
   .claseParaDecorar{
     width: 600px;
   }
-  .listaCategorias{
-    padding-left: 50px;
-    width: 80%;
-    margin-top: -60px;
-  }
+
   .product-list{
     padding-left: 0;
     padding-right: 10px;
